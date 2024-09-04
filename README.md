@@ -44,3 +44,22 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+# Projeto E-commerce com React e TypeScript
+
+Este é um projeto de e-commerce desenvolvido com React e TypeScript, utilizando `react-router-dom` para o roteamento e simulando chamadas assíncronas com promessas.
+
+## Funcionalidades
+
+- **Navbar com Carrinho:** Inclui um link para o carrinho de compras.
+- **Catálogo:** Exibe uma lista de produtos, que pode ser filtrada por categoria.
+- **Detalhe de Produto:** Mostra os detalhes de um produto específico.
+- **Roteamento:** Navegação entre a página inicial, categorias e detalhes do produto.
+
+## Como Executar
+
+1. Clone o repositório.
+2. Instale as dependências:
+   ```bash
+   npm install

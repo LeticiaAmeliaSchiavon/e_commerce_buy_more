@@ -1,0 +1,18 @@
+.navbar-custom {
+    background-color: #009900; /* Cor de fundo */
+    color: yellow; /* Cor do texto */
+  }
+  
+  .navbar-custom .nav-link {
+    color: white; /* Cor do link */
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  .navbar-custom .navbar-brand {
+    color: yellow; /* Cor do nome da loja */
+    font-weight: 800;
+    font-size: 32px;
+    margin-right: 70PX;
+  }
+
