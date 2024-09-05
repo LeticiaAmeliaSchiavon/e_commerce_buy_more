@@ -38,7 +38,7 @@ const ItemCount: React.FC<ItemCountProps> = ({ initial, stock, onAdd }) => {
           +
         </button>
       </div>
-      <button className="btn btn-primary mt-2" onClick={handleAdd} disabled={stock === 0}>
+      <button className="btn btn-success mt-2" onClick={handleAdd} disabled={stock === 0}>
         Adicionar ao Carrinho
       </button>
     </div>

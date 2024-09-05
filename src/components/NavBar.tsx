@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 import logo from '../assets/logo.png';
-import '../assets/styles/custom.css'; 
+import '../assets/styles/NavBar.css'; 
 
 const NavBar: React.FC = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-custom">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="Logo" style={{ height: '60px', marginRight: '5px', marginLeft: '70px' }} />
+          <img src={logo} alt="Logo" style={{ height: '60px', marginRight: '15px', marginLeft: '70px' }} />
           BUY MORE
         </Link>
         <div className="collapse navbar-collapse" id="navbarNav">

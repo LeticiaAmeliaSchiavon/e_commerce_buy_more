@@ -1,4 +1,3 @@
-// src/mockProducts.ts
 import geladeira1 from '../src/assets/images/geladeira1.png';
 import guardaroupas1 from '../src/assets/images/guardaroupas1.png';
 import celular1 from '../src/assets/images/celular1.png';

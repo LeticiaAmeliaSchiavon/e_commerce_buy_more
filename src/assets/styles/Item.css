@@ -1,0 +1,44 @@
+/* src/components/Item.css */
+
+.card {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    color: #009900;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .btn-success {
+    background-color: #009900;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  
+  .card-text-price {
+    font-size: 18px;
+    font-weight: 500;
+    color: #393a3b;
+  }

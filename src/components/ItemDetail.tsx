@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 interface ItemDetailProps {
   item: {
     id: number;
@@ -19,7 +18,7 @@ const ItemDetail: React.FC<ItemDetailProps> = ({ item }) => {
         <h5 className="card-title">{item.title}</h5>
         <p className="card-text">{item.description}</p>
         <p className="card-text">R${item.price.toFixed(2)}</p>
-        <a href="#" className="btn btn-primary">
+        <a href="#" className="btn btn-success">
           Adicionar ao Carrinho
         </a>
       </div>

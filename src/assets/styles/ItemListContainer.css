@@ -1,0 +1,36 @@
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Jumbotron customizado */
+  .jumbotron {
+    padding: 20px;
+  }
+  
+  .jumbotron h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .jumbotron p.lead {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+  
+  /* Estilo do container de itens */
+  .item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    width: 100%;
+  }
+  
+  

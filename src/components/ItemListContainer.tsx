@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
 import { getProducts } from '../mockProducts';
+import '../assets/styles/ItemListContainer.css'; 
 
 
 interface Product {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/styles/custom.css'; 
+import '../assets/styles/Item.css'; 
 
 
 interface ItemProps {
@@ -18,8 +18,8 @@ const Item: React.FC<ItemProps> = ({ id, title, description, price, pictureUrl }
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{description}</p>
-        <p className="card-text">R${price.toFixed(2)}</p>
-        <Link to={`/item/${id}`} className="btn btn-primary"  style={{ backgroundColor: '#4CAF50', color: 'white', borderColor: '#4CAF50' }}>
+        <p className="card-text-price">R${price.toFixed(2)}</p>
+        <Link to={`/item/${id}`} className="btn btn-success">
           Ver Detalhes
         </Link>
       </div>
