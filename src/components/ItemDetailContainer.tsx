@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { getItem } from '../mockProducts';
 import ItemDetail from './ItemDetail';
 
-interface Product {
+interface ItemDetailProps {
   id: number;
   title: string;
   description: string;
@@ -11,27 +9,30 @@ interface Product {
   pictureUrl: string;
 }
 
-const ItemDetailContainer: React.FC = () => {
-  const { itemId } = useParams<{ itemId: string }>();
-  const [item, setItem] = useState<Product | null>(null);
+const itemData: ItemDetailProps = {
+  id: 1, title: 'Produto 1', description: 'Descrição do Produto 1', price: 100, pictureUrl: 'https://via.placeholder.com/150'
+};
+
+const ItemDetailContainer = () => {
+  const [item, setItem] = useState<ItemDetailProps | null>(null);
 
   useEffect(() => {
-    if (itemId) {
-      getItem(parseInt(itemId)).then((product) => {
-        setItem(product);
-      });
-    }
-  }, [itemId]);
+    const mockFetch = new Promise<ItemDetailProps>((resolve) => {
+      setTimeout(() => {
+        resolve(itemData);
+      }, 2000);
+    });
+
+    mockFetch.then((data) => {
+      setItem(data);
+    });
+  }, []);
 
   return (
-    <div className="container mt-4">
-      {item ? (
-        <ItemDetail item={item} />
-      ) : (
-        <p>Carregando detalhes do produto...</p>
-      )}
+    <div>
+      {item ? <ItemDetail {...item} /> : <p>Carregando...</p>}
     </div>
   );
-};
+}
 
 export default ItemDetailContainer;

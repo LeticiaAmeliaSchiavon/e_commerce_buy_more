@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import ItemList from './ItemList';
 import { getProducts } from '../mockProducts';
 import '../assets/styles/ItemListContainer.css'; 
+import Loader from './Loader'; 
 
 
 interface Product {
